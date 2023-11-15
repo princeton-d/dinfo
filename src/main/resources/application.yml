@@ -1,0 +1,7 @@
+dfOpenAPI:
+  key: ${API_KEY}
+
+feign:
+  dfOpenAPI:
+    name: dfOpenAPI
+    url: https://api.neople.co.kr/df
