@@ -23,6 +23,7 @@ public class DfOpenAPIService {
 
     public ResponseServerInfoDto getServerInfo() {
         DfOpenAPIMapper instance = DfOpenAPIMapper.INSTANCE;
+
         RequestDfOpenApiServerInfoDto serverInfo = dfOpenAPIClient.getServerInfo(apiKey);
 
         return instance.RequestDfOpenApiServerInfoDtoToResponseServerInfoDto(serverInfo);
